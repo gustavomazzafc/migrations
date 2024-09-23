@@ -127,6 +127,7 @@ class Migration implements CommandsInterface
 
         $descr = $config['application']['descr'] ?? $this->parser->get('descr');
         $tableName = $this->parser->get('table', '@');
+        $forceAll = $application['forceAll'] ?? $this->parser->has('force-all');
 
         switch ($action) {
             case 'generate':
@@ -157,6 +158,7 @@ class Migration implements CommandsInterface
                     'migrationsInDb'        => $migrationsInDb,
                     'verbose'               => $this->parser->has('verbose'),
                     'skip-foreign-checks'   => $skipForeignChecks,
+                    'forceAll'   => $forceAll,
                 ]);
                 break;
             case 'list':
