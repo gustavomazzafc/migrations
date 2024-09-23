@@ -1,5 +1,5 @@
 {
-    "name": "phalcon/migrations",
+    "name": "gustavomazzafc/migrations",
     "description": "Run and Generate DB Migrations with Phalcon Framework",
     "keywords": [
         "framework",
@@ -18,6 +18,10 @@
         {
             "name": "Contributors",
             "homepage": "https://github.com/phalcon/migrations/graphs/contributors"
+        },
+        {
+            "name": "Gustavo Ferrari Granero",
+            "email": "gustavoferrarigranero@mazzafc.tech"
         }
     ],
     "support": {
